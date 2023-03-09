@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/new%202.html -->
+<html lang="en" style="transition: background-color 0.15s ease 0s;" class="ss-shaded-scrollbars"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+
+ <h1>HTML Form Example</h1>
+	<form action="http://127.0.0.1:5500/submit-form.php" method="post">
+		<!-- TEXT INPUT -->
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required="">
+
+		<!-- PASSWORD INPUT -->
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required="">
+
+		<!-- RADIO BUTTONS -->
+		<p>What is your favorite color?</p>
+		<label for="red">Red</label>
+		<input type="radio" id="red" name="color" value="red">
+		<label for="blue">Blue</label>
+		<input type="radio" id="blue" name="color" value="blue">
+		<label for="green">Green</label>
+		<input type="radio" id="green" name="color" value="green">
+
+		<!-- CHECKBOXES -->
+		<p>Which sports do you enjoy?</p>
+		<label for="football">Football</label>
+		<input type="checkbox" id="football" name="sports[]" value="football">
+		<label for="basketball">Basketball</label>
+		<input type="checkbox" id="basketball" name="sports[]" value="basketball">
+		<label for="baseball">Baseball</label>
+		<input type="checkbox" id="baseball" name="sports[]" value="baseball">
+
+		<!-- DROPDOWN LIST -->
+		<label for="city">Select your city:</label>
+		<select id="city" name="city">
+			<option value="new-york">New York</option>
+			<option value="los-angeles">Los Angeles</option>
+			<option value="chicago">Chicago</option>
+			<option value="houston">Houston</option>
+			<option value="miami">Miami</option>
+		</select>
+
+		<!-- TEXTAREA -->
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea>
+
+		<!-- SUBMIT BUTTON -->
+		<button type="submit">Submit</button>
+	</form>	<!-- FORM SECTION -->
+	<h1>Form Section</h1>
+  <!-- text input -->
+	<form action="http://127.0.0.1:5500/submit.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required=""><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required=""><br>
+
+    <!-- password input  -->
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required=""><br>
+
+    <!-- textarea  -->
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea><br>
+
+    <!-- radio button  -->
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+
+    <!-- check box -->
+		<label for="hobbies">Hobbies:</label>
+		<input type="checkbox" id="reading" name="hobbies" value="reading">
+		<label for="reading">Reading</label>
+		<input type="checkbox" id="travelling" name="hobbies" value="travelling">
+		<label for="travelling">Travelling</label>
+		<input type="checkbox" id="swimming" name="hobbies" value="swimming">
+		<label for="swimming">Swimming</label><br>
+
+    <!-- dropdown  -->
+		<label for="country">Country:</label>
+		<select id="country" name="country">
+			<option value="usa">USA</option>
+			<option value="uk">UK</option>
+			<option value="canada">Canada</option>
+			<option value="australia">Australia</option>
+		</select><br>
+
+    <!-- submit button  -->
+		<input type="submit" value="Submit">
+	</form>
+
+
+
+  <!-- FRAMESET SECTION -->
+	<h1>Example Frameset Section</h1>
+	
+		
+		
+			
+			
+		
+	
+
+	<!-- FRAMESET SECTION -->
+	<h1>Frameset Section</h1>
+	
+		
+		
+      Frameset Section
+<!-- The frameset section contains two frames, with one frame taking up 25% of the width and the other taking up 75% of the width.
+ This section is highlighted with the comment FRAMESET SECTION. 
+ Each frame element has a src attribute that specifies the source of the content to be displayed in the frame, and a name attribute that gives the frame a name. -->
+	
+
+
+	<!-- MENU SECTION -->
+	<h1>Menu Section</h1>
+	<ul>
+		<li><a href="http://127.0.0.1:5500/home.html" target="content">Home</a></li>
+		<li><a href="http://127.0.0.1:5500/about.html" target="content">About Us</a></li>
+		<li><a href="http://127.0.0.1:5500/services.html" target="content">Our Services</a></li>
+		<li><a href="http://127.0.0.1:5500/contact.html" target="content">Contact Us</a></li>
+	</ul>
+
+	<!-- CONTENT SECTION -->
+	<h1>Content Section</h1>
+	<p>Welcome to our website! We offer a variety of services to meet your needs. Please use the menu on the left to navigate our site.</p>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><screen-shader style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1;"><!--This is an element that contains all the html for the screen shader extension to work--><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 0; position: fixed; inset: -10%; width: auto; height: auto; z-index: 2147483646; background: black;"></div><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; inset: -10%; width: auto; height: auto; z-index: 2147483645; background: rgba(255, 147, 41, 0.3); mix-blend-mode: multiply;"></div><style>screen-shader{pointer-events: none !important;z-index: auto !important;}</style><style>
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar {
+                                    background: rgb(241,210,180) !important;
+                                    width: 17px !important;
+                                    height: 17px !important;
+                                    -webkit-appearance: unset !important;
+                                }
+
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-track {
+                                    background: transparent !important;
+                                }
+
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-corner{
+                                    background: rgb(210,183,157) !important;
+                                    box-shadow: none !important;
+                                    border-radius: unset !important;
+                                }
+
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-thumb{
+                                    background: rgb(193,168,144) !important;
+                                    border: 2px solid rgb(241,210,180) !important;
+                                    box-shadow: none !important;
+                                    border-radius: unset !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-thumb:vertical{
+                                    border-bottom-width: 0 !important;
+                                    border-top-width: 0 !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-thumb:horizontal{
+                                    border-left-width: 0 !important;
+                                    border-right-width: 0 !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-thumb:hover {
+                                    background: rgb(80,70,60) !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-thumb:active {
+                                    background: rgb(120,105,90) !important;
+                                }
+
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button{
+                                    background-color: rgb(241,210,180) !important;
+                                    background-repeat: no-repeat !important;
+                                    background-position: center !important;
+                                    box-shadow: none !important;
+                                    border-radius: unset !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:active{
+                                    background-color: rgb(120,105,90) !important; /* also arrow image should be white */
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:hover{
+                                    background-color: rgb(210,183,157) !important;
+                                }
+
+
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:vertical:decrement {
+                                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAAAXNSR0IArs4c6QAAACtJREFUGFdjZMADGJHlAtxs/m/YdQQuBmeAJGAKYQrAksgSyAoYsUnAFAAAePYN19hCAuwAAAAASUVORK5CYII=) !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:vertical:increment {
+                                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAAAXNSR0IArs4c6QAAACtJREFUGFdjDHCz+c+AAzCCxLEp2LDrCCNYEl0BSAIkBpeEKYBJYEiiWw0AS7kN15o+4o0AAAAASUVORK5CYII=) !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:horizontal:decrement {
+                                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAYAAADAp4fuAAAAAXNSR0IArs4c6QAAAChJREFUGFdjZEAF/xkYGBgZkcRAAiAAF4QJwAWRBfCrhBmLYSayBCMAAr0HCH164I4AAAAASUVORK5CYII=) !important;
+                                }
+                                :root.ss-shaded-scrollbars::-webkit-scrollbar-button:horizontal:increment {
+                                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAYAAADAp4fuAAAAAXNSR0IArs4c6QAAAChJREFUGFdjZICA/wwMDIxQNpwBEgQBsARMFiYIFsMmSJxKDDPhtgMAFoEHBwXO+y4AAAAASUVORK5CYII=) !important;
+                                }
+                            </style>
+<!-- saved from url=(0034)http://127.0.0.1:5500/new%202.html -->
+<html style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; inset: -10%; width: auto; height: auto; z-index: -2147483647;"></html><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; inset: -10%; width: auto; height: auto; z-index: -2147483646; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></div></screen-shader></html>
